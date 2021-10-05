@@ -1,6 +1,21 @@
 [
   
   {
+    "title": "Mr.Robot - TryHackme",
+    "url": "/posts/Mr-Robot/",
+    "categories": "tryhackme, linux",
+    "tags": "hacks, tryhackme, linux, wpscan, wordpress, nmap, suid, bruteforce",
+    "date": "2021-10-05 05:30:00 +0530",
+    
+
+
+
+
+
+    "snippet": "Mr.RobotNmapNmap scan report for 10.10.49.229Host is up (0.17s latency).Not shown: 65532 filtered ports, 1 closed portSome closed ports may be reported as filtered due to --defeat-rst-ratelimitPORT    STATE SERVICE80/tcp  open  http443/tcp open  httpsRead data files from: /usr/bin/../share/nmapRe..."
+  },
+  
+  {
     "title": "Ra - TryHackme",
     "url": "/posts/Ra/",
     "categories": "tryhackme, windows",

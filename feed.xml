@@ -4,7 +4,7 @@
   <id>/</id>
   <title>tinyb0y</title>
   <subtitle>A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text presentation.</subtitle>
-  <updated>2021-10-05T11:42:25+05:30</updated>
+  <updated>2021-10-05T15:41:33+05:30</updated>
   <author>
     <name>tinyb0y</name>
     <uri>/</uri>
@@ -17,6 +17,62 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Mr.Robot - TryHackme</title>
+    <link href="/posts/Mr-Robot/" rel="alternate" type="text/html" title="Mr.Robot - TryHackme" />
+    <published>2021-10-05T05:30:00+05:30</published>
+  
+    <updated>2021-10-05T05:30:00+05:30</updated>
+  
+    <id>/posts/Mr-Robot/</id>
+    <content src="/posts/Mr-Robot/" />
+    <author>
+      <name>tinyb0y</name>
+    </author>
+
+  
+    
+    <category term="tryhackme" />
+    
+    <category term="linux" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Mr.Robot
+
+Nmap
+Nmap scan report for 10.10.49.229
+Host is up (0.17s latency).
+Not shown: 65532 filtered ports, 1 closed port
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Read data files from: /usr/bin/../share/nmap
+
+
+Recon
+
+Port 80
+
+Wordpress Website
+
+└─$ gobuster dir -w /opt/SecLists/Discovery/Web-Conte...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
