@@ -28,6 +28,111 @@
 
 
     "snippet": "RAURL : https://tryhackme.com/room/raBackground Story:You have gained access to the internal network of WindCorp, the multibillion dollar company, running an extensive social media campaign claiming to be unhackable (ha! so much for that claim!).Next step would be to take their crown jewels and g..."
+  },
+  
+  {
+    "title": "ROP Emporium Callme Pwn",
+    "url": "/posts/Callme/",
+    "categories": "pwn, rop",
+    "tags": "pwn, callme, bof, bufferoverflow, rop",
+    "date": "2021-09-14 05:30:00 +0530",
+    
+
+
+
+
+
+    "snippet": "gdb-peda$ checksecCANARY    : disabledFORTIFY   : disabledNX        : ENABLEDPIE       : disabledRELRO     : Partialgdb-peda$ from pwn import *LOCAL = Falseif LOCAL:  p = process(&quot;./callme&quot;)else:  p = remote(&quot;127.0.0.1&quot;, 1337)elf = ELF(&#39;./callme&#39;)OFFSET = 40pop_rdi = p..."
+  },
+  
+  {
+    "title": "ROP Emporium Split Pwn",
+    "url": "/posts/Split/",
+    "categories": "pwn, rop",
+    "tags": "pwn, split, bof, bufferoverflow",
+    "date": "2021-09-01 05:30:00 +0530",
+    
+
+
+
+
+
+    "snippet": "gdb-peda$ checksecCANARY    : disabledFORTIFY   : disabledNX        : ENABLEDPIE       : disabledRELRO     : Partialgdb-peda$ Reversing in ghidraundefined8 main(void){  setvbuf(stdout,(char *)0x0,2,0);  puts(&quot;split by ROP Emporium&quot;);  puts(&quot;x86_64\\n&quot;);  pwnme();  puts(&quot;\\n..."
+  },
+  
+  {
+    "title": "Sink HTB",
+    "url": "/posts/Sink/",
+    "categories": "hackthebox, linux",
+    "tags": "hackthebox, insane, smuggling, haproxy, gunicorn, aws, gitea, git, containers, docker",
+    "date": "2021-08-11 05:30:00 +0530",
+    
+
+
+
+
+
+    "snippet": "  Nmap  Recon          HTTP Smuggling Attack      Enumerate the Git Repositories      Dump AWS (Amazon Web Services) Secrets, Keys      Decryption using AWS KMS      Short BriefHTTP Smuggling attack on haproxy, gunicorn server combination. Get admin session key using smuggling attack and leak his..."
+  },
+  
+  {
+    "title": "Reel HTB",
+    "url": "/posts/Reel/",
+    "categories": "hackthebox, windows",
+    "tags": "hacks, htb, windows, active directory, bloodhound, ldap",
+    "date": "2021-07-26 00:00:00 +0530",
+    
+
+
+
+
+
+    "snippet": "Nmap# Nmap 7.91 scan initiated Mon Jul 26 09:36:58 2021 as: /usr/bin/nmap -sCV -p21,22,25,135,139,445,593,49159 --open -oN nmap/Script_10.129.1.151.nmap --system-dns --stats-every 2s 10.129.1.151Nmap scan report for 10.129.1.151Host is up (0.26s latency).PORT      STATE SERVICE      VERSION21/tcp..."
+  },
+  
+  {
+    "title": "Mantis HTB",
+    "url": "/posts/Mantis/",
+    "categories": "hackthebox, windows",
+    "tags": "hackthebox, hard, active directory, kerberos, tgt",
+    "date": "2021-07-23 05:30:00 +0530",
+    
+
+
+
+
+
+    "snippet": "MantisMantis was one of those Windows targets where it’s just a ton of enumeration until you get a System shell. The exploit is where a low level user was allowed to make a privileged Kerberos ticket.  Nmap  Recon  SQL Credential , Get a user james  ms14-068.py low privelege user to system user i..."
+  },
+  
+  {
+    "title": "Breadcrumbs HTB",
+    "url": "/posts/Breadcrumbs/",
+    "categories": "hackthebox, windows",
+    "tags": "hackthebox, hard, active directory, php, reversing",
+    "date": "2021-07-13 05:30:00 +0530",
+    
+
+
+
+
+
+    "snippet": "Nmap# Nmap done at Tue Jul 13 04:06:21 2021 -- 1 IP address (1 host up) scanned in 49.05 secondsroot@kali:~/ctf/htb/Breadcrumbs/10.129.163.3/nmap# root@kali:~/ctf/htb/Breadcrumbs/10.129.163.3/nmap# cat Script_10.129.163.3.nmap# Nmap 7.80 scan initiated Tue Jul 13 04:05:32 2021 as: /usr/bin/nmap -..."
+  },
+  
+  {
+    "title": "Inception HTB",
+    "url": "/posts/Inception/",
+    "categories": "hackthebox, linux",
+    "tags": "hacks, htb, linux, proxy, lfi, container",
+    "date": "2021-07-12 00:00:00 +0530",
+    
+
+
+
+
+
+    "snippet": "Nmap---------------------Starting Script Scan-----------------------                        PORT     STATE SERVICE    VERSION                                                   80/tcp   open  http       Apache httpd 2.4.18 ((Ubuntu))                           |_http-server-header: Apache/2.4.18 (U..."
   }
   
 ]

