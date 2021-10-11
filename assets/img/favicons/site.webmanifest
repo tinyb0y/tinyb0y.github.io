@@ -3,7 +3,7 @@
 {
   "name": "tinyb0y",
   "short_name": "tinyb0y",
-  "description": "A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text presentation.",
+  "description": "This blog is a collection of writeups. Hackthebox, TryHackMe, Bugs",
   "icons": [
     {
       "src": "/assets/img/favicons/android-chrome-192x192.png",

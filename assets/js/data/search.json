@@ -1,6 +1,21 @@
 [
   
   {
+    "title": "Ultimate Hacking Competition October Qualifier",
+    "url": "/posts/UHC-October/",
+    "categories": "UHC, linux",
+    "tags": "uhc, linux, perl, ssti, easy",
+    "date": "2021-10-11 00:00:00 +0530",
+    
+
+
+
+
+
+    "snippet": "NunchucksIntroductionIP: 54.208.212.226ObjectiveThe objective of this assessment is to perform a penetration test against the server.The pentester is tasked with following methodical approach in obtaining access to the objective goals.This test should simulate an actual penetration test and how y..."
+  },
+  
+  {
     "title": "Year of the Rabbit - TryHackMe",
     "url": "/posts/Year-of-the-Rabbit/",
     "categories": "tryhackme, linux",

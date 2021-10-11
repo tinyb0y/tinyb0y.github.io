@@ -3,8 +3,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>/</id>
   <title>tinyb0y</title>
-  <subtitle>A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text presentation.</subtitle>
-  <updated>2021-10-06T17:11:11+05:30</updated>
+  <subtitle>This blog is a collection of writeups. Hackthebox, TryHackMe, Bugs</subtitle>
+  <updated>2021-10-11T10:05:46+05:30</updated>
   <author>
     <name>tinyb0y</name>
     <uri>/</uri>
@@ -17,6 +17,58 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Ultimate Hacking Competition October Qualifier</title>
+    <link href="/posts/UHC-October/" rel="alternate" type="text/html" title="Ultimate Hacking Competition October Qualifier" />
+    <published>2021-10-11T00:00:00+05:30</published>
+  
+    <updated>2021-10-11T00:00:00+05:30</updated>
+  
+    <id>/posts/UHC-October/</id>
+    <content src="/posts/UHC-October/" />
+    <author>
+      <name>tinyb0y</name>
+    </author>
+
+  
+    
+    <category term="UHC" />
+    
+    <category term="linux" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Nunchucks
+
+Introduction
+
+
+
+IP: 54.208.212.226
+
+Objective
+
+The objective of this assessment is to perform a penetration test against the server.
+The pentester is tasked with following methodical approach in obtaining access to the objective goals.
+This test should simulate an actual penetration test and how you would start from beginning to end, including the overall report.
+
+Recommendations
+
+I ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -231,71 +283,6 @@ ret = p64(0x00000000004006be)
 
 arg1 = p64(0xdeadbeefdeadbeef)
 arg2 = p64(0xcafebabeca...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>ROP Emporium Split Pwn</title>
-    <link href="/posts/Split/" rel="alternate" type="text/html" title="ROP Emporium Split Pwn" />
-    <published>2021-09-01T05:30:00+05:30</published>
-  
-    <updated>2021-09-01T05:30:00+05:30</updated>
-  
-    <id>/posts/Split/</id>
-    <content src="/posts/Split/" />
-    <author>
-      <name>tinyb0y</name>
-    </author>
-
-  
-    
-    <category term="pwn" />
-    
-    <category term="rop" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      gdb-peda$ checksec
-CANARY    : disabled
-FORTIFY   : disabled
-NX        : ENABLED
-PIE       : disabled
-RELRO     : Partial
-gdb-peda$ 
-
-
-Reversing in ghidra
-
-
-undefined8 main(void)
-
-{
-  setvbuf(stdout,(char *)0x0,2,0);
-  puts("split by ROP Emporium");
-  puts("x86_64\n");
-  pwnme();
-  puts("\nExiting");
-  return 0;
-}
-
-void pwnme(void)
-
-{
-  undefined local_28 [32];
-  
-  memset(local_28,0,0x20);
-  p...
     </summary>
   
 
