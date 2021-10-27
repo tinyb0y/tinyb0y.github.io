@@ -1,6 +1,21 @@
 [
   
   {
+    "title": "Ultimate Hacking Competition October Semifinals",
+    "url": "/posts/UHC-Semifinals-October/",
+    "categories": "UHC, linux",
+    "tags": "uhc, linux, reverse, re, lfi, file upload vulnerability",
+    "date": "2021-10-27 00:00:00 +0530",
+    
+
+
+
+
+
+    "snippet": "SpooktrolObjectiveThe objective of this assessment is to perform a penetration test against the server.The pentester is tasked with following methodical approach in obtaining access to the objective goals.This test should simulate an actual penetration test and how you would start from beginning ..."
+  },
+  
+  {
     "title": "Ultimate Hacking Competition October Qualifier",
     "url": "/posts/UHC-October/",
     "categories": "UHC, linux",

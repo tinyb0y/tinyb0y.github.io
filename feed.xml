@@ -4,7 +4,7 @@
   <id>/</id>
   <title>tinyb0y</title>
   <subtitle>This blog is a collection of writeups. Hackthebox, TryHackMe, Bugs</subtitle>
-  <updated>2021-10-11T10:05:46+05:30</updated>
+  <updated>2021-10-27T15:43:24+05:30</updated>
   <author>
     <name>tinyb0y</name>
     <uri>/</uri>
@@ -17,6 +17,55 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Ultimate Hacking Competition October Semifinals</title>
+    <link href="/posts/UHC-Semifinals-October/" rel="alternate" type="text/html" title="Ultimate Hacking Competition October Semifinals" />
+    <published>2021-10-27T00:00:00+05:30</published>
+  
+    <updated>2021-10-27T00:00:00+05:30</updated>
+  
+    <id>/posts/UHC-Semifinals-October/</id>
+    <content src="/posts/UHC-Semifinals-October/" />
+    <author>
+      <name>tinyb0y</name>
+    </author>
+
+  
+    
+    <category term="UHC" />
+    
+    <category term="linux" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Spooktrol
+
+
+
+Objective
+
+The objective of this assessment is to perform a penetration test against the server.
+The pentester is tasked with following methodical approach in obtaining access to the objective goals.
+This test should simulate an actual penetration test and how you would start from beginning to end, including the overall report.
+
+Nmap
+IP : 10.10.11.123
+
+┌──(kali@kali)-[~/ctf/htb/spo...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -223,66 +272,6 @@ Background Story:
 You have gained access to the internal network of WindCorp, the multibillion dollar company, running an extensive social media campaign claiming to be unhackable (ha! so much for that claim!).
 
 Next step would be to take their crown jewels and get full access to their internal network. You have spotted a new windows machine that may le...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>ROP Emporium Callme Pwn</title>
-    <link href="/posts/Callme/" rel="alternate" type="text/html" title="ROP Emporium Callme Pwn" />
-    <published>2021-09-14T05:30:00+05:30</published>
-  
-    <updated>2021-09-14T05:30:00+05:30</updated>
-  
-    <id>/posts/Callme/</id>
-    <content src="/posts/Callme/" />
-    <author>
-      <name>tinyb0y</name>
-    </author>
-
-  
-    
-    <category term="pwn" />
-    
-    <category term="rop" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      gdb-peda$ checksec
-CANARY    : disabled
-FORTIFY   : disabled
-NX        : ENABLED
-PIE       : disabled
-RELRO     : Partial
-gdb-peda$ 
-
-from pwn import *
-
-LOCAL = False
-
-if LOCAL:
-  p = process("./callme")
-else:
-  p = remote("127.0.0.1", 1337)
-
-elf = ELF('./callme')
-
-OFFSET = 40
-pop_rdi = p64(0x00000000004009a3)
-ret = p64(0x00000000004006be)
-
-arg1 = p64(0xdeadbeefdeadbeef)
-arg2 = p64(0xcafebabeca...
     </summary>
   
 
