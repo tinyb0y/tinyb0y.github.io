@@ -4,7 +4,7 @@
   <id>/</id>
   <title>tinyb0y</title>
   <subtitle>This blog is a collection of writeups. Hackthebox, TryHackMe, Bugs</subtitle>
-  <updated>2021-10-27T15:43:24+05:30</updated>
+  <updated>2021-11-22T11:32:24+05:30</updated>
   <author>
     <name>tinyb0y</name>
     <uri>/</uri>
@@ -17,6 +17,112 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>BountyHunter HTB</title>
+    <link href="/posts/BountyHunter/" rel="alternate" type="text/html" title="BountyHunter HTB" />
+    <published>2021-11-22T05:30:00+05:30</published>
+  
+    <updated>2021-11-22T05:30:00+05:30</updated>
+  
+    <id>/posts/BountyHunter/</id>
+    <content src="/posts/BountyHunter/" />
+    <author>
+      <name>tinyb0y</name>
+    </author>
+
+  
+    
+    <category term="hackthebox" />
+    
+    <category term="linux" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      BountyHunter
+
+
+
+Fairly Easy box with a knowledge of XXE and reversing python scripts.
+
+
+  Nmap
+  Recon
+  XXE Injection
+  FootHold
+  Root Privilege Escalation
+
+
+As usual let’s start with nmap
+
+Nmap
+
+# Nmap 7.80 scan initiated Sun Jul 25 00:30:37 2021 as: nmap -Pn -sCV -p22,80 -oN nmap/Basic_10.129.144.35.nmap 10.129.144.35
+Nmap scan report for 10.129.144.35
+Host is up (0.20s latency).
+
+PORT   ST...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Building a C2 that will bypass ASMI</title>
+    <link href="/posts/ASMIBypass/" rel="alternate" type="text/html" title="Building a C2 that will bypass ASMI" />
+    <published>2021-11-22T05:30:00+05:30</published>
+  
+    <updated>2021-11-22T05:30:00+05:30</updated>
+  
+    <id>/posts/ASMIBypass/</id>
+    <content src="/posts/ASMIBypass/" />
+    <author>
+      <name>kyle</name>
+    </author>
+
+  
+    
+    <category term="Learning" />
+    
+    <category term="windows" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+  TLDR; chaining the Windows trusted binary, FodHelper, for UAC bypass together with the ability to rewrite registry keys will safely disable ASMI allowing a PowerShell reverse shell.
+
+
+POC
+
+FodHelper UAC Bypass to evade ASMI
+
+FodHelper
+
+FodHelper is a Windows trusted binary known as a Features On Demand Helper. To this effect, we are able to use this binary to bypass UAC even when set to 5.
+
+...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -172,106 +278,6 @@ Anonymous login is disabled.
 Port 22
 
 We don’t have credentials yet to login. So we...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Mr.Robot - TryHackme</title>
-    <link href="/posts/Mr-Robot/" rel="alternate" type="text/html" title="Mr.Robot - TryHackme" />
-    <published>2021-10-05T05:30:00+05:30</published>
-  
-    <updated>2021-10-05T05:30:00+05:30</updated>
-  
-    <id>/posts/Mr-Robot/</id>
-    <content src="/posts/Mr-Robot/" />
-    <author>
-      <name>tinyb0y</name>
-    </author>
-
-  
-    
-    <category term="tryhackme" />
-    
-    <category term="linux" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Mr.Robot
-
-Nmap
-Nmap scan report for 10.10.49.229
-Host is up (0.17s latency).
-Not shown: 65532 filtered ports, 1 closed port
-Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
-PORT    STATE SERVICE
-80/tcp  open  http
-443/tcp open  https
-
-Read data files from: /usr/bin/../share/nmap
-
-
-Recon
-
-Port 80
-
-Wordpress Website
-
-└─$ gobuster dir -w /opt/SecLists/Discovery/Web-Conte...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Ra - TryHackme</title>
-    <link href="/posts/Ra/" rel="alternate" type="text/html" title="Ra - TryHackme" />
-    <published>2021-10-04T05:30:00+05:30</published>
-  
-    <updated>2021-10-04T05:30:00+05:30</updated>
-  
-    <id>/posts/Ra/</id>
-    <content src="/posts/Ra/" />
-    <author>
-      <name>tinyb0y</name>
-    </author>
-
-  
-    
-    <category term="tryhackme" />
-    
-    <category term="windows" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      RA
-
-URL : https://tryhackme.com/room/ra
-
-Background Story:
-
-You have gained access to the internal network of WindCorp, the multibillion dollar company, running an extensive social media campaign claiming to be unhackable (ha! so much for that claim!).
-
-Next step would be to take their crown jewels and get full access to their internal network. You have spotted a new windows machine that may le...
     </summary>
   
 

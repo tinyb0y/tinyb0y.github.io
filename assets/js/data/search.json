@@ -1,6 +1,36 @@
 [
   
   {
+    "title": "BountyHunter HTB",
+    "url": "/posts/BountyHunter/",
+    "categories": "hackthebox, linux",
+    "tags": "hackthebox, easy, XXE, python",
+    "date": "2021-11-22 05:30:00 +0530",
+    
+
+
+
+
+
+    "snippet": "BountyHunterFairly Easy box with a knowledge of XXE and reversing python scripts.  Nmap  Recon  XXE Injection  FootHold  Root Privilege EscalationAs usual let’s start with nmapNmap# Nmap 7.80 scan initiated Sun Jul 25 00:30:37 2021 as: nmap -Pn -sCV -p22,80 -oN nmap/Basic_10.129.144.35.nmap 10.12..."
+  },
+  
+  {
+    "title": "Building a C2 that will bypass ASMI",
+    "url": "/posts/ASMIBypass/",
+    "categories": "Learning, windows",
+    "tags": "windows, uac, ASMI",
+    "date": "2021-11-22 05:30:00 +0530",
+    
+
+
+
+
+
+    "snippet": "  TLDR; chaining the Windows trusted binary, FodHelper, for UAC bypass together with the ability to rewrite registry keys will safely disable ASMI allowing a PowerShell reverse shell.POCFodHelper UAC Bypass to evade ASMIFodHelperFodHelper is a Windows trusted binary known as a Features On Demand ..."
+  },
+  
+  {
     "title": "Ultimate Hacking Competition October Semifinals",
     "url": "/posts/UHC-Semifinals-October/",
     "categories": "UHC, linux",
