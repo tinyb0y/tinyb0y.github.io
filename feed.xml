@@ -1,33 +1,33 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>/</id>
+  <id>http://0.0.0.0:4000/</id>
   <title>tinyb0y</title>
   <subtitle>This blog is a collection of writeups. Hackthebox, TryHackMe, Bugs</subtitle>
-  <updated>2021-11-22T11:32:24+05:30</updated>
+  <updated>2022-01-18T11:53:21+05:30</updated>
   <author>
     <name>tinyb0y</name>
-    <uri>/</uri>
+    <uri>http://0.0.0.0:4000/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="http://0.0.0.0:4000/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
-    href="/"/>
+    href="http://0.0.0.0:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
-  <rights> © 2021 tinyb0y </rights>
+  <rights> © 2022 tinyb0y </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
 
   
   <entry>
-    <title>BountyHunter HTB</title>
-    <link href="/posts/BountyHunter/" rel="alternate" type="text/html" title="BountyHunter HTB" />
-    <published>2021-11-22T05:30:00+05:30</published>
+    <title>Developer HTB</title>
+    <link href="http://0.0.0.0:4000/posts/Developer/" rel="alternate" type="text/html" title="Developer HTB" />
+    <published>2022-01-15T05:30:00+05:30</published>
   
-    <updated>2021-11-22T05:30:00+05:30</updated>
+    <updated>2022-01-15T05:30:00+05:30</updated>
   
-    <id>/posts/BountyHunter/</id>
-    <content src="/posts/BountyHunter/" />
+    <id>http://0.0.0.0:4000/posts/Developer/</id>
+    <content src="http://0.0.0.0:4000/posts/Developer/" />
     <author>
       <name>tinyb0y</name>
     </author>
@@ -48,29 +48,20 @@
 
 
 
-      BountyHunter
+      
 
+A tricky machine where we had to phish the administrator to obtain the credentials using tabnabbing technique. Next exploiting sentry application to execute command injection. Third Stage is to reverse the binary and decode the message to obtain a password.
 
+Stage 1: TabNabbing Attack
 
-Fairly Easy box with a knowledge of XXE and reversing python scripts.
+Stage 2: Sentry RCE
 
+Stage 3: 64 bit ELF Reverse Engineering
 
-  Nmap
-  Recon
-  XXE Injection
-  FootHold
-  Root Privilege Escalation
+NMAP
 
-
-As usual let’s start with nmap
-
-Nmap
-
-# Nmap 7.80 scan initiated Sun Jul 25 00:30:37 2021 as: nmap -Pn -sCV -p22,80 -oN nmap/Basic_10.129.144.35.nmap 10.129.144.35
-Nmap scan report for 10.129.144.35
-Host is up (0.20s latency).
-
-PORT   ST...
+Nmap scan report for 10.129.219.217
+Host...
     </summary>
   
 
@@ -78,21 +69,168 @@ PORT   ST...
 
   
   <entry>
-    <title>Building a C2 that will bypass ASMI</title>
-    <link href="/posts/ASMIBypass/" rel="alternate" type="text/html" title="Building a C2 that will bypass ASMI" />
-    <published>2021-11-22T05:30:00+05:30</published>
+    <title>Previse HTB</title>
+    <link href="http://0.0.0.0:4000/posts/Previse/" rel="alternate" type="text/html" title="Previse HTB" />
+    <published>2022-01-08T05:30:00+05:30</published>
   
-    <updated>2021-11-22T05:30:00+05:30</updated>
+    <updated>2022-01-08T05:30:00+05:30</updated>
   
-    <id>/posts/ASMIBypass/</id>
-    <content src="/posts/ASMIBypass/" />
+    <id>http://0.0.0.0:4000/posts/Previse/</id>
+    <content src="http://0.0.0.0:4000/posts/Previse/" />
     <author>
-      <name>kyle</name>
+      <name>tinyb0y</name>
     </author>
 
   
     
-    <category term="Learning" />
+    <category term="hackthebox" />
+    
+    <category term="linux" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+
+An easy box with an unvalidated redirection vulnerability, access to registration page and dump the file sitebackup.zip and exploit a post parameter to get remote code execution on the machine. Use the mysql configuration file and enumerate accounts in database and crack the password to get user on the machine. For root the sudo user can run a script where the attacker can inject the path va...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Writer HTB</title>
+    <link href="http://0.0.0.0:4000/posts/Writer/" rel="alternate" type="text/html" title="Writer HTB" />
+    <published>2021-12-11T05:30:00+05:30</published>
+  
+    <updated>2021-12-11T05:30:00+05:30</updated>
+  
+    <id>http://0.0.0.0:4000/posts/Writer/</id>
+    <content src="http://0.0.0.0:4000/posts/Writer/" />
+    <author>
+      <name>tinyb0y</name>
+    </author>
+
+  
+    
+    <category term="hackthebox" />
+    
+    <category term="linux" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Writer
+
+
+A very good box with a good knowledge on how postfix filters work and  ubuntu apt installer.
+
+
+  Nmap
+  Recon
+  SQL Injection
+  FootHold
+  User escalation
+  Root Privilege Escalation
+
+
+Nmap
+
+
+PORT    STATE SERVICE     VERSION
+22/tcp  open  ssh         OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)
+80/tcp  open  http        Apache httpd 2.4.41 ((Ubuntu))
+|_http-server-head...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Pikaboo HTB</title>
+    <link href="http://0.0.0.0:4000/posts/Pikaboo/" rel="alternate" type="text/html" title="Pikaboo HTB" />
+    <published>2021-12-04T05:30:00+05:30</published>
+  
+    <updated>2021-12-04T05:30:00+05:30</updated>
+  
+    <id>http://0.0.0.0:4000/posts/Pikaboo/</id>
+    <content src="http://0.0.0.0:4000/posts/Pikaboo/" />
+    <author>
+      <name>tinyb0y</name>
+    </author>
+
+  
+    
+    <category term="hackthebox" />
+    
+    <category term="linux" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+A very tough box with a good knowlege of webservers and perl scripting and a bit of code workthrough.
+
+
+  Nmap
+  Recon
+  Nginx/Apache Misconfiguration
+  FootHold
+  User escalation
+  Root Privilege Escalation
+
+
+Nmap
+
+root@kali:~/ctf/htb/Pikaboo/10.129.142.104/nmap# cat Basic_10.129.142.104.nmap
+# Nmap 7.80 scan initiated Sun Jul 18 00:53:07 2021 as: nmap -Pn -sCV -p21,22,80 -oN nmap/Basic_10.1...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Intelligence HTB</title>
+    <link href="http://0.0.0.0:4000/posts/Intelligence/" rel="alternate" type="text/html" title="Intelligence HTB" />
+    <published>2021-12-04T05:30:00+05:30</published>
+  
+    <updated>2021-12-04T05:30:00+05:30</updated>
+  
+    <id>http://0.0.0.0:4000/posts/Intelligence/</id>
+    <content src="http://0.0.0.0:4000/posts/Intelligence/" />
+    <author>
+      <name>tinyb0y</name>
+    </author>
+
+  
+    
+    <category term="hackthebox" />
     
     <category term="windows" />
     
@@ -106,178 +244,15 @@ PORT   ST...
 
 
 
-      
-  TLDR; chaining the Windows trusted binary, FodHelper, for UAC bypass together with the ability to rewrite registry keys will safely disable ASMI allowing a PowerShell reverse shell.
-
-
-POC
-
-FodHelper UAC Bypass to evade ASMI
-
-FodHelper
-
-FodHelper is a Windows trusted binary known as a Features On Demand Helper. To this effect, we are able to use this binary to bypass UAC even when set to 5.
-
-...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Ultimate Hacking Competition October Semifinals</title>
-    <link href="/posts/UHC-Semifinals-October/" rel="alternate" type="text/html" title="Ultimate Hacking Competition October Semifinals" />
-    <published>2021-10-27T00:00:00+05:30</published>
-  
-    <updated>2021-10-27T00:00:00+05:30</updated>
-  
-    <id>/posts/UHC-Semifinals-October/</id>
-    <content src="/posts/UHC-Semifinals-October/" />
-    <author>
-      <name>tinyb0y</name>
-    </author>
-
-  
-    
-    <category term="UHC" />
-    
-    <category term="linux" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Spooktrol
-
-
-
-Objective
-
-The objective of this assessment is to perform a penetration test against the server.
-The pentester is tasked with following methodical approach in obtaining access to the objective goals.
-This test should simulate an actual penetration test and how you would start from beginning to end, including the overall report.
-
-Nmap
-IP : 10.10.11.123
-
-┌──(kali@kali)-[~/ctf/htb/spo...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Ultimate Hacking Competition October Qualifier</title>
-    <link href="/posts/UHC-October/" rel="alternate" type="text/html" title="Ultimate Hacking Competition October Qualifier" />
-    <published>2021-10-11T00:00:00+05:30</published>
-  
-    <updated>2021-10-11T00:00:00+05:30</updated>
-  
-    <id>/posts/UHC-October/</id>
-    <content src="/posts/UHC-October/" />
-    <author>
-      <name>tinyb0y</name>
-    </author>
-
-  
-    
-    <category term="UHC" />
-    
-    <category term="linux" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Nunchucks
-
-Introduction
-
-
-
-IP: 54.208.212.226
-
-Objective
-
-The objective of this assessment is to perform a penetration test against the server.
-The pentester is tasked with following methodical approach in obtaining access to the objective goals.
-This test should simulate an actual penetration test and how you would start from beginning to end, including the overall report.
-
-Recommendations
-
-I ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Year of the Rabbit - TryHackMe</title>
-    <link href="/posts/Year-of-the-Rabbit/" rel="alternate" type="text/html" title="Year of the Rabbit - TryHackMe" />
-    <published>2021-10-06T05:30:00+05:30</published>
-  
-    <updated>2021-10-06T05:30:00+05:30</updated>
-  
-    <id>/posts/Year-of-the-Rabbit/</id>
-    <content src="/posts/Year-of-the-Rabbit/" />
-    <author>
-      <name>tinyb0y</name>
-    </author>
-
-  
-    
-    <category term="tryhackme" />
-    
-    <category term="linux" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Year of the Rabbit
-
-Fun Box.
-
-Nmap
-Nmap scan report for 10.10.117.67
-Host is up (0.15s latency).
-Not shown: 65170 closed ports, 362 filtered ports
-Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
-PORT   STATE SERVICE
-21/tcp open  ftp
-22/tcp open  ssh
-80/tcp open  http
-
-
-Recon
-Port 21
-
-Anonymous login is disabled.
-
-Port 22
-
-We don’t have credentials yet to login. So we...
+      Nmap Scan
+PORT      STATE SERVICE       VERSION
+53/tcp    open  domain?
+80/tcp    open  http          Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2021-07-04 12:15:15Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap    ...
     </summary>
   
 

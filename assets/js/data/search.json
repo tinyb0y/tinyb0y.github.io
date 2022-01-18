@@ -1,6 +1,81 @@
 [
   
   {
+    "title": "Developer HTB",
+    "url": "/posts/Developer/",
+    "categories": "hackthebox, linux",
+    "tags": "hackthebox, hard, phish, nabbing, sentry, reversing",
+    "date": "2022-01-15 05:30:00 +0530",
+    
+
+
+
+
+
+    "snippet": "A tricky machine where we had to phish the administrator to obtain the credentials using tabnabbing technique. Next exploiting sentry application to execute command injection. Third Stage is to reverse the binary and decode the message to obtain a password.Stage 1: TabNabbing AttackStage 2: Sentr..."
+  },
+  
+  {
+    "title": "Previse HTB",
+    "url": "/posts/Previse/",
+    "categories": "hackthebox, linux",
+    "tags": "hackthebox, easy, redirection, rce",
+    "date": "2022-01-08 05:30:00 +0530",
+    
+
+
+
+
+
+    "snippet": "An easy box with an unvalidated redirection vulnerability, access to registration page and dump the file sitebackup.zip and exploit a post parameter to get remote code execution on the machine. Use the mysql configuration file and enumerate accounts in database and crack the password to get user ..."
+  },
+  
+  {
+    "title": "Writer HTB",
+    "url": "/posts/Writer/",
+    "categories": "hackthebox, linux",
+    "tags": "hackthebox, medium, bruteforce, apt",
+    "date": "2021-12-11 05:30:00 +0530",
+    
+
+
+
+
+
+    "snippet": "WriterA very good box with a good knowledge on how postfix filters work and  ubuntu apt installer.  Nmap  Recon  SQL Injection  FootHold  User escalation  Root Privilege EscalationNmapPORT    STATE SERVICE     VERSION22/tcp  open  ssh         OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protoco..."
+  },
+  
+  {
+    "title": "Pikaboo HTB",
+    "url": "/posts/Pikaboo/",
+    "categories": "hackthebox, linux",
+    "tags": "hackthebox, hard, ldap, perl, apache, nginx",
+    "date": "2021-12-04 05:30:00 +0530",
+    
+
+
+
+
+
+    "snippet": "A very tough box with a good knowlege of webservers and perl scripting and a bit of code workthrough.  Nmap  Recon  Nginx/Apache Misconfiguration  FootHold  User escalation  Root Privilege EscalationNmaproot@kali:~/ctf/htb/Pikaboo/10.129.142.104/nmap# cat Basic_10.129.142.104.nmap# Nmap 7.80 scan..."
+  },
+  
+  {
+    "title": "Intelligence HTB",
+    "url": "/posts/Intelligence/",
+    "categories": "hackthebox, windows",
+    "tags": "hackthebox, medium, ldap, Active Directory, dns, gmsdumper, bloodhound",
+    "date": "2021-12-04 05:30:00 +0530",
+    
+
+
+
+
+
+    "snippet": "Nmap ScanPORT      STATE SERVICE       VERSION53/tcp    open  domain?80/tcp    open  http          Microsoft IIS httpd 10.0|_http-server-header: Microsoft-IIS/10.088/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2021-07-04 12:15:15Z)135/tcp   open  msrpc         Microsoft Wi..."
+  },
+  
+  {
     "title": "BountyHunter HTB",
     "url": "/posts/BountyHunter/",
     "categories": "hackthebox, linux",
